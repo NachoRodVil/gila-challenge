@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+.app {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.intro-section {
+  display: flex;
+  width: 40%;
+  background-color: var(--secondary-bg-color);
+  padding: 25px 40px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  border-radius: 20px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  h1 {
+    font-size: 40px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    height: 200px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.post-card {
+  background-color: var(--secondary-bg-color);
+  width: 40%;
+  padding: 25px 40px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  border-radius: 20px;
+
+  .post-card-title-section {
+    display: grid;
+    grid-template-columns: 80% 20%;
+
+    p {
+      color: var(--secondary-text-color);
+      margin-top: auto;
+      margin-bottom: auto;
+      font-size: larger;
+      text-align: center
+    }
+
+    ;
+
+    h3 {
+      font-size: x-large;
+    }
+  }
+
+  .post-card-body {
+    margin-block-start: 0px;
+  }
+}
+
+.pagination-menu {
+  padding: 20px 0 30px 0;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  display: flex;
+  gap: 5px;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  button {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border-width: 0px;
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
+    cursor: pointer;
   }
-  to {
-    transform: rotate(360deg);
+
+  button:disabled {
+    background-color: var(--button-disabled-color);
+    cursor: default;
+  }
+}
+
+.theme-switcher {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: block;
+  width: 150px;
+  margin-left: auto;
+  
+  button{
+    padding: 8px 15px;
+    font-size: large;
+    border-width: 0px;
+    border-radius: 4px;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-bg-color);
   }
 }
