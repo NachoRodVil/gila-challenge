@@ -1,6 +1,6 @@
 # GILA SOFTWARE
 
-# Ignacio Rodriguez Villasuso
+## Challenge - Ignacio Rodriguez Villasuso
 
 This app was created based on the following criteria:
 
