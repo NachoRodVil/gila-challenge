@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-[data-theme="light"]{
+[data-theme="light"] {
   --primary-bg-color: none;
   --primary-text-color: #000000;
   --secondary-bg-color: #E0EDED;
